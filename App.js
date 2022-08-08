@@ -1,11 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import React from 'react';
+import { StyleSheet, Text , View , Image, TextInput, Button } from 'react-native';
+import PersonalInformation from './components/PersonalInformation';
+import Bio from './components/Bio';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <PersonalInformation />
+      <Bio />
       <StatusBar style="auto" />
+      <TextInput placeholder='email' />
+      <Button title="press me" />
     </View>
   );
 }
